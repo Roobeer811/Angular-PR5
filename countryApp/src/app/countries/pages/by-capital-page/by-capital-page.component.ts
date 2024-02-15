@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SearchBoxComponent } from '../../components/search-box/search-box.component';
+import { CountryService } from '../../services/country.service';
 
 @Component({
   selector: 'app-by-capital-page',
