@@ -1,4 +1,3 @@
-<p>country-page works!</p>
 <ng-template #loading>
     <div class="alert alert-info text-center">
       Espere por favor
@@ -7,7 +6,7 @@
   <div *ngIf="country; else loading">
     <div class="row">
       <div class="col-12">
-        <h2>País: <strong>{{ country.name }}</strong></h2>
+        <h2>País: <strong>{{ country.name.common }}</strong></h2>
         <hr>
       </div>
     </div>
@@ -15,13 +14,13 @@
     <div class="row">
       <div class="col-4">
         <h3>Bandera</h3>
-        <img [src]="country.flag" [alt]="country.name" class="img-thumbnail">
+        <img [src]="country.flags.svg" [alt]="country.name.common" class="img-thumbnail">
       </div>
       <div class="col">
         <h3>Información</h3>
         <ul class="list-group">
           <li class="list-group-item">
-            <strong>Población:</strong> {{ country.population | number }}
+            <strong>Población:</strong> {{ country.population}}
           </li>
           <li class="list-group-item">
             <strong>Código:</strong> {{ country.ccn3 }}
@@ -33,16 +32,16 @@
       <div class="col">
         <h3>Traducciones</h3>
         <div class="d-flex flex-wrap">
-            <span class="badge bg-primary mr-1"> {{ country.translations.de }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.es }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.fr }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.ja }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.it }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.br }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.pt }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.nl }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.hr }} </span>
-            <span class="badge bg-primary mr-1"> {{ country.translations.fa }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.por.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.spa.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.fra.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.jpn.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.ita.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.rus.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.pol.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.tur.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.ara.common }} </span>
+            <span class="badge bg-primary mr-1"> {{ country.translations.deu.common }} </span>
         </div>
       </div>
     </div>

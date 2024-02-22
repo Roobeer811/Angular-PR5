@@ -10,18 +10,19 @@ No hay países que mostrar...
 <thead>
   <tr>
     <th>#</th>
-    <th>Icono</th>
+    <th>País</th>
     <th>Bandera</th>
-    <th>Nombre</th>
-    <th>Capital</th>
     <th>Población</th>
+    <th>Capital</th>
+    <th></th>
     <th> <!-- deja un espacio en blanco de momento --></th>
   </tr>
 </thead>
 <tbody>
   <tr *ngFor="let country of countries; let i = index">
-	<th>{{ country.name }}</th>
-    <th>{{ country.flag }}</th>
+    <th>{{i + 1}}</th>
+	<th>{{ country.name.common }}</th>
+    <th> <img [src]="country.flags.png" [alt]="country.name.common" class="img-thumbnail"></th>
     <th>{{ country.population }}</th>
 	<th>{{ country.capital }}</th>
 

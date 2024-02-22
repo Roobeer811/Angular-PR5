@@ -1,23 +1,52 @@
 export interface Country {
-    name: string;
+    name: Name;
     capital: string;
     languages: string;
     region: string;
     population: number;
-    flag: string;
+    flags: Flags;
     translations: Translations;
     ccn3: string;
   }
 
   export interface Translations{
-    de: string;
-    es: string;
-    fr: string;
-    ja: string;
-    it: string;
-    br: string;
-    pt: string;
-    nl: string;
-    hr: string;
-    fa: string;
+    por:{
+      common: string;
+    };
+    spa:{
+      common: string;
+    };
+    fra:{
+      common: string;
+    };
+    jpn:{
+      common: string;
+    };
+    ita:{
+      common: string;
+    };
+    pol:{
+      common: string;
+    };
+    tur:{
+      common: string;
+    };
+    ara:{
+      common: string;
+    };
+    deu:{
+      common: string;
+    };
+    rus:{
+      common: string;
+    };
+  }
+
+  export interface Name{
+    common:string
+  }
+
+  export interface Flags{
+    png:string
+    svg: string
   }
