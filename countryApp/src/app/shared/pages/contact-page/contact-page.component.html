@@ -1,28 +1,64 @@
 
-<div class="container mt-5">
-    <h2>Formulario de Contacto</h2>
+<header class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">Contacto</h1>
+        <p class="lead">Ponte en contacto con nosotros para obtener más información.</p>
+    </div>
+</header>
 
+<!-- Información de Contacto -->
+<section class="container">
+    <h2 class="text-center mb-4">Información de Contacto</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Dirección</h5>
+            <p>Calle Ejemplo, 123</p>
+            <p>Ciudad, Estado</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Teléfono</h5>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Correo Electrónico</h5>
+            <p>info&#64;example.com</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mapa de Ubicación -->
+<section class="container mb-5">
+    <h2 class="text-center mb-4">Ubicación</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678910111213!2d-85.67891011121314!3d42.345678910111213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDA1JzI3LjMiTiA4NcKwMTgnNTguNiJX!5e0!3m2!1ses!2ses!4v1594144462246!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</section>
+
+<!-- Formulario de Contacto -->
+<section id="contacto" class="container mb-5">
+    <h2 class="text-center mb-4">Formulario de Contacto</h2>
     <form action="tu_servidor_de_procesamiento.php" method="POST">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
-
         <div class="form-group">
             <label for="email">Correo electrónico:</label>
             <input type="email" class="form-control" id="email" name="email" required>
         </div>
-
         <div class="form-group">
             <label for="asunto">Asunto:</label>
             <input type="text" class="form-control" id="asunto" name="asunto" required>
         </div>
-
         <div class="form-group">
             <label for="mensaje">Mensaje:</label>
             <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
         </div>
-
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+</footer>
